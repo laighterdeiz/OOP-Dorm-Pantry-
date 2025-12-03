@@ -49,11 +49,12 @@ Open your terminal inside the SourceCode/ folder
 
 </p>
 <br/>
-Compile all Java files:
+Compile all Java files: 
 
 `javac SourceCode/*.java`
 
 Run the program through the terminal:
+
 `java PantryApp.java`
 </p>
 
