@@ -27,8 +27,8 @@ Users can:<br/>
 </p>
 
 <h2 align = "center"> 📋 Project File Structure 📋 </h2>
-📂 src/<br/>
-└── 📂 pantryapp/<br/>
+
+  📂 SourceCode/<br/>
     ├── ☕ PantryApp.java<br/>          
     ├── ☕ Pantry.java<br/>
     ├── ☕ PantryItem.java<br/>
