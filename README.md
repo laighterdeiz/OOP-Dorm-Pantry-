@@ -1,4 +1,4 @@
-<h1 align = "center">✨ ✨ Dorm Pantry Inventory System ✨ ✨</h1>
+<h1 align = "center">✨ ✨ GutOmeter: Dorm Pantry Inventory System ✨ ✨</h1>
 <h3 align = "center"> In partial fulfillment for CS 211</h3>
 <p align = "center">
 <b>BSIT 2110 </b> <br/>
