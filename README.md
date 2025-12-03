@@ -28,7 +28,8 @@ Users can:<br/>
 
 <h2 align = "center"> 📋 Project File Structure 📋 </h2>
 
-📂 SourceCode/<br/>
+📂 OOP-Dorm-Pantry/<br/>
+└── 📂 SourceCode/<br/>
     ├── ☕ PantryApp.java<br/>          
     ├── ☕ Pantry.java<br/>
     ├── ☕ PantryItem.java<br/>
@@ -51,6 +52,7 @@ Open your terminal inside the SourceCode/ folder
 </p>
 <br/>
 Compile all Java files: 
+<br/>
 
 `javac SourceCode/*.java`
 
