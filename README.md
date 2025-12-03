@@ -54,7 +54,6 @@ Compile all Java files:
 `javac SourceCode/*.java`
 
 Run the program through the terminal:
-
 `java PantryApp.java`
 </p>
 
