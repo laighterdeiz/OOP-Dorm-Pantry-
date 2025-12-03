@@ -49,18 +49,23 @@ Users can:<br/>
 `CannedItem.java` / `PerishableItem.java` / `OtherItem.java` / `FrozenItems.java` / `DryItems.java` – Subclasses representing each category.<br/>
 
 <br/>
-<h2 align = "center"> 📁 Steps on how to run the program 📁 </h2>
+<h2 align="center"> 📁 Steps on how to run the program 📁 </h2>
+
 Open your terminal inside the SourceCode/ folder
 
 <br/>
-Compile all Java files: 
+
+Compile all Java files:
 
 `
-javac SourceCode/*.java`
+javac SourceCode/*.java
+`
 
 Run the program through the terminal, bash:
 
-`java PantryApp.java`
+`
+java PantryApp.java
+`
 </p>
 
 <h2 align = "center">⚙ Features ⚙</h2>
