@@ -8,13 +8,11 @@ Untalan, Lily Beatriz D.
 </p>
 
 <br/>
-<br/>
 <h2 align = "center"> 🌟 Overview 🌟 </h2>
 Dorm Pantry Inventory System is a console-based Java application designed to help students manage pantry items efficiently.
 It allows users to add items, track expiration dates, view items expiring soon, and remove items.
 <br/><br/>
 It demonstrates the practical use of Object-oriented Programming (OOP) concepts such as encapsulation, inheritance, polymorphism, and abstraction, alongside proper file handling and modular design.
-<br/>
 <br/>
 <br/>
 <p align = "center">
@@ -45,7 +43,6 @@ Users can:<br/>
 'PantryItem.java' – Abstract parent class containing shared item properties.
 'CannedItem.java' / 'PerishableItem.java' / 'OtherItem.java' – Subclasses representing each category.
 ```
-
 <br/>
 <h2 align = "center"> 📁 Steps on how to run the program 📁 </h2>
 
