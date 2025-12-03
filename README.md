@@ -50,7 +50,6 @@ Compile all Java files:
 `javac pantryapp/*.java`
 
 Run the program:
-
 `java pantryapp.PantryApp`
 
 <h2 align = "center">⚙ Features ⚙</h2>
@@ -62,22 +61,22 @@ Run the program:
 <br/>
 
 <h2 align = "center"> 🔨 Object Oriented Principles: 🔨</h2>
-<h3 align = "center"> Encapsulation </h3>
+<h3 align = "center"> - Encapsulation - </h3>
 <p align = "center">
 Applied through private fields inside PantryItem such as name and expirationDate.
 These variables are only accessible via public getter methods, ensuring controlled data handling.
 </p>
-<h3 align = "center"> Abstraction </h3>
+<h3 align = "center"> - Abstraction - </h3>
 <p align = "center">
 PantryItem is defined as an abstract class.
 It hides common behaviors while letting subclasses (CannedItem, PerishableItem, OtherItem) implement their own getCategory() method.
 </p>
-<h3 align = "center"> inheritance </h3>
+<h3 align = "center"> - inheritance - </h3>
 <p align = "center">
 CannedItem, PerishableItem, and OtherItem inherit from PantryItem.
 Each subclass reuses the parent’s properties and methods, reducing duplication.
 </p>
-<h3 align = "center"> Polymorphism </h3>
+<h3 align = "center"> - Polymorphism - </h3>
 <p align = "center">
 Objects of different subclasses (new CannedItem(), new PerishableItem(), etc. are stored in the same List<PantryItem>.
 When calling item.toString() or item.getCategory(), the program dynamically selects the correct overridden version based on the object's actual type.
