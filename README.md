@@ -7,7 +7,7 @@ Mendoza, Chris Raye M. <br/>
 Untalan, Lily Beatriz D.
 </p>
 
-## * * Overview * *
+<p align = "center">* * Overview * *</p>
 Dorm Pantry Inventory System is a console-based Java application designed to help students manage pantry items efficiently.
 It allows users to add items, track expiration dates, view items expiring soon, and remove items.
 <br/><br/>
@@ -22,7 +22,7 @@ Users can:<br/>
 🚪 Exit the system<br/>
 </p>
 
-## * * Project File Structure * *
+<p align = "center">* * Project File Structure * *</p>
 ```
 📂 src/
 └── 📂 pantryapp/
