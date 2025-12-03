@@ -34,13 +34,15 @@ Users can:<br/>
     ├── ☕ PantryItem.java<br/>
     ├── ☕ CannedItem.java<br/>
     ├── ☕ PerishableItem.java<br/>
+    ├── ☕ FrozenItem.java<br/>
+    ├── ☕ DryItem.java<br/>
     └── ☕ OtherItem.java<br/>
 <br/>
 
 `PantryApp.java` – Entry point; displays menu and handles user interactions.<br/>
 `Pantry.java` – Manages the list of pantry items (add, remove, display).<br/>
 `PantryItem.java` – Abstract parent class containing shared item properties.<br/>
-`CannedItem.java` / `PerishableItem.java` / `OtherItem.java` – Subclasses representing each category.<br/>
+`CannedItem.java` / `PerishableItem.java` / `OtherItem.java` / `FrozenItems.java` / `DryItems.java` – Subclasses representing each category.<br/>
 
 <br/>
 <h2 align = "center"> 📁 Steps on how to run the program 📁 </h2>
@@ -56,9 +58,10 @@ Run the program:
 <h2 align = "center">⚙ Features ⚙</h2>
 1. "Add Entry" Create a new diary entry with timestamp.<br/>
 2. "View Entries" Display all saved entries with numbering.<br/>
-3. "Modify Entry" Edit any existing note by selecting its number<br/>
-4. "Delete Entry" Remove a specific entry permanently.<br/>
-5. "Insert Entry" Add a note at any position in the list.<br/>
+3. "View Expiring/Expired Items" Displays nearly expired or already expired items<br/>
+4. "Remove Item" Remove a specific entry permanently.<br/>
+5. "Analytics" Displays the percentages of items per category.<br/>
+5. "Exit" Exits the program.<br/>
 <br/>
 
 <h2 align = "center"> 🔨 Object Oriented Principles: 🔨</h2>
@@ -70,7 +73,7 @@ These variables are only accessible via public getter methods, ensuring controll
 <h3 align = "center"> - Abstraction - </h3>
 <p align = "center">
 PantryItem is defined as an abstract class.
-It hides common behaviors while letting subclasses (CannedItem, PerishableItem, OtherItem) implement their own getCategory() method.
+It hides common behaviors while letting subclasses (CannedItem, PerishableItem, FrozenItem, DryItem, OtherItem) implement their own getCategory() method.
 </p>
 <h3 align = "center"> - inheritance - </h3>
 <p align = "center">
@@ -92,34 +95,40 @@ When calling item.toString() or item.getCategory(), the program dynamically sele
 [2] View All Items
 [3] View Items Expiring Soon
 [4] Remove Item
-[5] Exit
+[5] Analytics (Items by Category)
+[6] Exit
 Choose an option: 1
-Enter item name: Milk
-Enter expiration year (YYYY): 2025
-Enter expiration month (1–12): 2
-Enter expiration day (1–31): 10
-Select category:
-[1] Canned
-[2] Perishable
-[3] Other
-Enter choice: 2
-Item added: Milk
+Enter item name: Century Tuna
+Enter expiration year (YYYY): 2028
+Enter expiration month (1?12): 04
+Enter expiration day (1?31): 25
+Select Category:
+[1] Canned Goods
+[2] Perishable Goods
+[3] Frozen Goods
+[4] Dry Goods
+[5] Others
+Enter choice: 1
+Item added: Century Tuna
 ```
 
 ## Viewing All Items
 
 ```
-===== Dorm Pantry Inventory System =====
 [1] Add Item
 [2] View All Items
 [3] View Items Expiring Soon
 [4] Remove Item
-[5] Exit
+[5] Analytics (Items by Category)
+[6] Exit
 Choose an option: 2
 All items in pantry:
 [Perishable] Milk | Expires: 2025-12-05 (2 days left) ?? Expiring Soon!
-[Canned] Red Beans | Expires: 2027-12-03 (730 days left)
-[Other] Instant Noodles | Expires: 2026-08-03 (243 days left)
+[Canned] Monggo Beans | Expires: 2027-12-03 (730 days left)
+[Dry Goods] Instant Noodles | Expires: 2026-08-03 (243 days left)
+[Frozen Goods] Tender Juicy Hotdog | Expires: 2026-12-03 (365 days left)
+[Frozen Goods] Longganisa | Expires: 2026-12-03 (365 days left)
+[Canned] Century Tuna | Expires: 2028-04-25 (874 days left)
 ```
 
 ## Viewing Items That Will Expire Soon or Already Expired
@@ -130,7 +139,8 @@ All items in pantry:
 [2] View All Items
 [3] View Items Expiring Soon
 [4] Remove Item
-[5] Exit
+[5] Analytics (Items by Category)
+[6] Exit
 Choose an option: 3
 Items expiring within 5 days or already expired:
 [Perishable] Milk | Expires: 2025-12-05 (2 days left) ?? Expiring Soon!
@@ -144,10 +154,29 @@ Items expiring within 5 days or already expired:
 [2] View All Items
 [3] View Items Expiring Soon
 [4] Remove Item
-[5] Exit
+[5] Analytics (Items by Category)
+[6] Exit
 Choose an option: 4
-Enter name of item to remove: Milk
-Item removed.
+Enter name of item to remove: Century Tuna
+```
+
+## Viewing Analytics
+
+```
+===== Dorm Pantry Inventory System =====
+[1] Add Item
+[2] View All Items
+[3] View Items Expiring Soon
+[4] Remove Item
+[5] Analytics (Items by Category)
+[6] Exit
+Choose an option: 5
+
+===== Pantry Analytics =====
+Perishable: 1 items (20.00%)
+Canned: 1 items (20.00%)
+Dry Goods: 1 items (20.00%)
+Frozen Goods: 2 items (40.00%)
 ```
 
 <h2 align = "center">👾 Contributors 👾</h2>
