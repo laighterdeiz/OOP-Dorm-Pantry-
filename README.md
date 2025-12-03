@@ -38,6 +38,7 @@ Users can:<br/>
         ├── ☕ FrozenItem.java<br/>
         ├── ☕ DryItem.java<br/>
         └── ☕ OtherItem.java<br/>
+       
 <br/>
 
 `PantryApp.java` – Entry point; displays menu and handles user interactions.<br/>
