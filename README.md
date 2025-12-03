@@ -82,7 +82,7 @@ Objects of different subclasses (new CannedItem(), new PerishableItem(), etc. ar
 When calling item.toString() or item.getCategory(), the program dynamically selects the correct overridden version based on the object's actual type.
 </p>
 
-## ‧₊˚ ┊ Example Output
+## Example Output
 ```
 ===== Dorm Pantry Inventory System =====
 [1] Add Item
@@ -103,7 +103,7 @@ Enter choice: 2
 Item added: Milk
 ```
 
-##  ‧₊˚ ┊ Contributors
+## 👾 Contributors 👾
 <table>
 <tr>
     <th> &nbsp; </th>
@@ -139,7 +139,7 @@ Item added: Milk
 </tr>
 </table>
 
-##  ‧₊˚ ┊ Acknowledgment
+##🫂 Acknowledgments 🫂
 To our CS 211 Instructor, we sincerely express our thanks for guiding us all throughout the semester. Although we have our shortcomings, you stayed patient. To our revered classmates, thank you for being with us, cooperating, learning, and laughing along. With our silly little OOP inside jokes, it is sure to bring some lighthearted and informational memories
 ---
 
