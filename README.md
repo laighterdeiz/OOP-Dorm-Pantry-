@@ -50,6 +50,7 @@ Compile all Java files:
 `javac pantryapp/*.java`
 
 Run the program:
+
 `java pantryapp.PantryApp`
 
 <h2 align = "center">⚙ Features ⚙</h2>
@@ -82,7 +83,9 @@ Objects of different subclasses (new CannedItem(), new PerishableItem(), etc. ar
 When calling item.toString() or item.getCategory(), the program dynamically selects the correct overridden version based on the object's actual type.
 </p>
 
-## Example Output
+<h2 align = "center"> Example Outputs</h2>
+
+## Adding an Item
 ```
 ===== Dorm Pantry Inventory System =====
 [1] Add Item
@@ -102,6 +105,51 @@ Select category:
 Enter choice: 2
 Item added: Milk
 ```
+
+## Viewing All Items
+
+```
+===== Dorm Pantry Inventory System =====
+[1] Add Item
+[2] View All Items
+[3] View Items Expiring Soon
+[4] Remove Item
+[5] Exit
+Choose an option: 2
+All items in pantry:
+[Perishable] Milk | Expires: 2025-12-05 (2 days left) ?? Expiring Soon!
+[Canned] Red Beans | Expires: 2027-12-03 (730 days left)
+[Other] Instant Noodles | Expires: 2026-08-03 (243 days left)
+```
+
+## Viewing Items That Will Expire Soon or Already Expired
+
+```
+===== Dorm Pantry Inventory System =====
+[1] Add Item
+[2] View All Items
+[3] View Items Expiring Soon
+[4] Remove Item
+[5] Exit
+Choose an option: 3
+Items expiring within 5 days or already expired:
+[Perishable] Milk | Expires: 2025-12-05 (2 days left) ?? Expiring Soon!
+```
+
+## Deleting an Item
+
+```
+===== Dorm Pantry Inventory System =====
+[1] Add Item
+[2] View All Items
+[3] View Items Expiring Soon
+[4] Remove Item
+[5] Exit
+Choose an option: 4
+Enter name of item to remove: Milk
+Item removed.
+```
+
 <h2 align = "center">👾 Contributors 👾</h2>
 <table>
 <tr>
@@ -110,7 +158,7 @@ Item added: Milk
     <th> Role </th>
 </tr>
 <tr>
-    <td><img src="static/marieemoiselle.JPG" width="100" height="100"> </td>
+    <td><img src="static/lance.jpg" width="100" height="100"> </td>
     <td><strong>Lance M. Pria</strong> <br/>
     <a href="https://github.com/laighterdeiz" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=orange" alt="laighterdeiz's GitHub">
@@ -119,7 +167,7 @@ Item added: Milk
     <td>The Third Wheel</td>
 </tr>
 <tr>
-    <td><img src="static/jeisquared.jpg" width="100" height="100"> </td>
+    <td><img src="static/jchris.jpg" width="100" height="100"> </td>
     <td><strong>Chris Raye M. Mendoza</strong> <br/>
     <a href="https://github.com/callmeDnD" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=blue" alt="callmeDnD's GitHub">
@@ -128,7 +176,7 @@ Item added: Milk
     <td>The Loverboy</td>
 </tr>
 <tr>
-    <td><img src="static/renzmarrion.jpg" width="100" height="100"> </td>
+    <td><img src="static/lily.jpg" width="100" height="100"> </td>
     <td><strong>Lily BeatriZ D. Untalan</strong> <br/>
     <a href="https://github.com/" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=blue" alt="Lele's GitHub">
