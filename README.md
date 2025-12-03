@@ -55,8 +55,10 @@ Run the program:
 java pantryapp.PantryApp
 ```
 <h2 align = "center">⚙ Features ⚙</h2>
-1. **Add Entry.** Create a new diary entry with timestamp.
-2. **View Entries.** Display all saved entries with numbering.
-3. **Modify Entry.** Edit any existing note by selecting its number
-4. **Delete Entry.** Remove a specific entry permanently.
-5. **Insert Entry.** Add a note at any position in the list.
+<br/>
+1. **Add Entry.** Create a new diary entry with timestamp.<br/>
+2. **View Entries.** Display all saved entries with numbering.<br/>
+3. **Modify Entry.** Edit any existing note by selecting its number<br/>
+4. **Delete Entry.** Remove a specific entry permanently.<br/>
+5. **Insert Entry.** Add a note at any position in the list.<br/>
+<br/>
